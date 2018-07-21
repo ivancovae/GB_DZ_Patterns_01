@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Patterns_01
 {
@@ -11,7 +8,7 @@ namespace Patterns_01
         // метод запуск выполнения действия для человека
         private static void MakeAction(Func<Human, object> action, Human human) 
         {
-            string methodName = action.Method.Name;
+            string methodName = action.Method.ReflectedType.Name;
             Console.WriteLine("Начало работы метода {0}", methodName);
             action(human);
             Console.WriteLine("Окончание работы метода {0}", methodName);
@@ -27,9 +24,11 @@ namespace Patterns_01
 
         static void Main(string[] args)
         {
+            // Первое задание, создание Store и Customer
             Store store = new Store(new DefaultIdGenerator());
             Customer customer = new Customer(new DefaultIdGenerator());
 
+            // Второе задание выполнение последовательности действий
             List<(Func<Human, object> action, Human human)> steps = GetActionSteps();
             foreach (var step in steps)
             {

@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Patterns_01
+﻿namespace Patterns_01
 {
+    /// <summary>
+    /// Интерфейс действий типа Dummy
+    /// </summary>
     interface IDummy
     {
         // метод выполнения какого-то действия

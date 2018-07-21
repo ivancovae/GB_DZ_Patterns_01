@@ -43,16 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Constants.cs" />
-    <Compile Include="Customer.cs" />
-    <Compile Include="DefaultIdGenerator.cs" />
-    <Compile Include="EntityBase.cs" />
+    <Compile Include="Dummy\AgainDummy.cs" />
+    <Compile Include="Utils\Constants.cs" />
+    <Compile Include="FirstTask\Customer.cs" />
+    <Compile Include="Dummy\DefaultDummy.cs" />
+    <Compile Include="FirstTask\DefaultIdGenerator.cs" />
+    <Compile Include="FirstTask\EntityBase.cs" />
     <Compile Include="Human.cs" />
-    <Compile Include="IdHelper.cs" />
-    <Compile Include="IIdGenerator.cs" />
+    <Compile Include="Dummy\IDummy.cs" />
+    <Compile Include="FirstTask\IIdGenerator.cs" />
+    <Compile Include="Dummy\MoreDummy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Store.cs" />
+    <Compile Include="FirstTask\Store.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
